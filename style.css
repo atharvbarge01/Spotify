@@ -1,0 +1,291 @@
+body {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    width: 350px;
+    border-radius: 1rem;
+    background-color: black;
+}
+
+.mainbody {
+    background-color: #121212;
+    border-radius: 1rem;
+    flex: 1;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.musicplay {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+    margin-top: 0;
+}
+
+.options {
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.options a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.options i {
+    font-size: 1.25rem;
+}
+
+.options:hover {
+    opacity: 1;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+}
+
+.lib-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 0.5rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box1 {
+    height: 9rem;
+    background-color: #232323;
+    border-radius: 1rem;
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.boxP1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.boxP2 {
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: white;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    border-radius: 100px;
+    height: 2rem;
+    margin-top: 0.5rem;
+    width: fit-content;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.stickynav {
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.stickynav .arrows {
+    margin-left: 1rem;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badges .item {
+    margin-right: 1.25rem;
+}
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.5rem 1.5rem 0 0;
+}
+
+.card_container {
+    display: flex;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.info {
+    opacity: 0.8;
+    font-size: 0.75rem;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 95%;
+    height: 40%;
+    border-top: 1px solid white;
+}
+
+.musicplay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 8px;
+    gap: 10px;
+}
+.album img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text {
+    flex-grow: 1;
+}
+
+.p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.album_icon {
+    display: flex;
+}
+
+.album_icon i {
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.player {
+    width: 50%;
+}
+
+.control {
+    width: 25%;
+}
+
+.play_control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playicon {
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.playicon:hover {
+    opacity: 1;
+}
+
+.playback {
+    display: flex;
+    justify-content: center;
+}
+
+.range {
+    width: 73%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.range::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: green;
+    border-radius: 50%;
+    margin-top: -6px;
+}
